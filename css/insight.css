@@ -1,3 +1,10 @@
+ins-background-#2196F3 = #2196F3 {
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
 .ins-search {
   display: none;
 }
@@ -50,7 +57,7 @@
   display: inline-block;
 }
 .ins-close:hover {
-  color: #e78170;
+  color: ins-background- #2196f3;
 }
 .ins-search-container {
   right: 50%;
@@ -124,7 +131,7 @@
 .ins-section .ins-search-item:hover,
 .ins-section .ins-search-item.active {
   color: #fff !important;
-  background: #e78170 !important;
+  background: ins-background- #2196f3 !important;
 }
 .ins-section .ins-search-item:hover .ins-slug,
 .ins-section .ins-search-item.active .ins-slug,
