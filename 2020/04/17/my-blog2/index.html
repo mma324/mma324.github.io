@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  
+  <title itemprop="name">hexo-sakura主题美化第一篇如何安装使用他入门篇 | 酷喵BLOG</title>
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
+  <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+  <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/lib.min.css" media="all">
+  <link rel="stylesheet" href="/css/font.css" media="all">
+  <link rel="stylesheet" href="/css/insight.css" media="all">
+  <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
+  <link rel="stylesheet" href="/css/zoom.css" media="all">
+  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
+" type="text/css" media="all"> -->
+  <script>
+  /*Initial Variables*/
+  var mashiro_option = new Object();
+  var mashiro_global = new Object();
+  mashiro_option.NProgressON = true;
+  /* 
+   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
+   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
+   */
+  mashiro_option.email_domain = "";
+  mashiro_option.email_name = "";
+  mashiro_option.cookie_version_control = "";
+  mashiro_option.qzone_autocomplete = false;
+  mashiro_option.site_name = "涼しいニャー叶";
+  mashiro_option.author_name = "叶";
+  mashiro_option.site_url = "https://mma324.github.io";
+  mashiro_option.v_appId = "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz";
+  mashiro_option.v_appKey = "mgOpfzbkHYqU92CV4IDlAUHQ";
+  mashiro_option.mathjax = "0";
+  mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
+  mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
+
+  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
+  // mashiro_option.float_player_on = true;
+
+  /*End of Initial Variables*/
+  </script>
+  <script type="text/javascript">
+  var bg = "https://cdn.jsdelivr.net/gh/mma324/hexobolg@master/hexobolg/imgdongmia (4).webp,https://cdn.jsdelivr.net/gh/mma324/hexobolg@master/hexobolg/imgdongmia (1).webp,https://cdn.jsdelivr.net/gh/mma324/hexobolg@master/hexobolg/imgdongmia (2).webp,https://cdn.jsdelivr.net/gh/mma324/hexobolg@master/hexobolg/imgdongmia (3).webp,https://cdn.jsdelivr.net/gh/mma324/hexobolg@master/hexobolg/imgdongmia (5).webp,https://cdn.jsdelivr.net/gh/mma324/hexobolg@master/hexobolg/imgdongmia (6).webp".split(",");
+  var bgindex = Math.floor(Math.random()*bg.length);
+  if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+    alert('朋友，IE浏览器未适配哦~');
+  }
+  </script>
+  <style type="text/css">
+  .hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}
+  </style>
+  <style type="text/css">.site-top .lower nav{display:block !important;}.author-profile i,.post-like a,.post-share .show-share,.sub-text,.we-info a,span.sitename,.post-more i:hover,#pagination a:hover,.post-content a:hover,.float-content i:hover{color:#2196F3}.feature i,.download,.navigator i:hover,.links ul li:before,.ar-time i,span.ar-circle,.object,.comment .comment-reply-link,.siren-checkbox-radio:checked + .siren-checkbox-radioInput:after{background:#2196F3}::-webkit-scrollbar-thumb{background:#2196F3}.download,.navigator i:hover,.link-title,.links ul li:hover,#pagination a:hover,.comment-respond input[type='submit']:hover{border-color:#2196F3}.entry-content a:hover,.site-info a:hover,.comment h4 a,#comments-navi a.prev,#comments-navi a.next,.comment h4 a:hover,.site-top ul li a:hover,.entry-title a:hover,#archives-temp h3,span.page-numbers.current,.sorry li a:hover,.site-title a:hover,i.iconfont.js-toggle-search.iconsearch:hover,.comment-respond input[type='submit']:hover{color:#2196F3}.comments .comments-main{display:block !important;}.comments .comments-hidden{display:none !important;}background-position:center center;background-attachment:inherit;}
+  </style>
+</head>
+</html>
+<body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
+  <div class="scrollbar" id="bar">
+  </div>
+  <a href="#" class="cd-top faa-float animated"></a>
+  <section id="main-container">
+    <div class="headertop ">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou"> 
+	  <a href="https://mma324.github.io"> <img src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/hexobolg/imgkumaio.jpeg"> </a> 
+	  </div>
+      <div class="header-info">
+          <p id="jinrishici-sentence">正在加载今日诗词....</p>
+        <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+		<div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+          
+            
+              
+                <li>
+                  <a href="http://github.com/mma324" target="_blank" class="social-github" title="github">
+                    <img src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/hexobolg/imggithub.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="http://weibo.com/mashirozx?is_all=1" target="_blank" class="social-github" title="sina">
+                    <img src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/hexobolg/imgsina.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="https://music.163.com/#/user/home?id=270814481" target="_blank" class="social-github" title="wangyiyun">
+                    <img src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/hexobolg/imgwangyiyun.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="http://weibo.com/mashirozx?is_all=ningliang65@gmail.com" target="_blank" class="social-github" title="email">
+                    <img src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/hexobolg/imgemail.svg">
+                  </a>
+                </li>
+              
+            
+              
+                <li class="wechat">
+                  <a href="/#">
+                    <img src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/hexobolg/imgwechat.png">
+                  </a>
+                  <div class="wechatInner">
+                    <img src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/img/custom/wechat.jpg">
+                  </div>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="http://www.bilil.com" target="_blank" class="social-github" title="bilili">
+                    <img src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/hexobolg/imgbilibili.png">
+                  </a>
+                </li>
+              
+            
+              
+                <li>
+                  <a href="http://www.bilil.com" target="_blank" class="social-github" title="qq">
+                    <img src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/hexobolg/imgqq.png">
+                  </a>
+                </li>
+              
+            
+          
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/next-b.svg">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <div id="video-btn" class="loadvideo videolive">
+    </div>
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
+    <div id="page" class="site wrapper">
+      <header class="site-header no-select gizle sabit" role="banner">
+  <div class="site-top">
+    <div class="site-branding">
+      <span class="site-title">
+        <span class="logolink moe-mashiro">
+          <a href="/">
+            <span class="sakurasono">涼しいニャー</span>
+            <span class="shironeko">叶</span>
+          </a>
+        </span>
+      </span>
+    </div>
+    <div class="searchbox search-form-submit">
+      <i class="iconfont js-toggle-search iconsearch icon-search">
+      </i>
+    </div>
+    <div id="show-nav" class="showNav mobile-fit">
+      <div class="line line1">
+      </div>
+      <div class="line line2">
+      </div>
+      <div class="line line3">
+      </div>
+    </div>
+    <div class="lower-cantiner">
+      <div class="lower">
+        <nav class="mobile-fit-control hide">
+          <ul id="menu-new" class="menu">
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+                    首页
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/archives">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+                    归档
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/categories/技术/">
+                          <i class="fa fa-code" aria-hidden="true"></i>
+                          技术
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/生活/">
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                          生活
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/资源/">
+                          <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                          资源
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/随想/">
+                          <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                          随想
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories/转载/">
+                          <i class="fa fa-archive faa-shake" aria-hidden="true"></i>
+                          美化
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/categories/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-bookmark faa-shake" aria-hidden="true"></i>
+                    分类
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/tags/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-tag  faa-shake" aria-hidden="true"></i>
+                    标签
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="javascript:;">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+                    清单
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/tags/悦读/">
+                          <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
+                          读书
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/bangumi/">
+                          <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                          番组
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/music/">
+                          <i class="fa fa-headphones" aria-hidden="true"></i>
+                          歌单
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/tags/图集/">
+                          <i class="fa fa-photo" aria-hidden="true"></i>
+                          图集
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+              <li>
+                <a href="/comment/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+                    留言板
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/links/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-paper-plane faa-float faa-fast" aria-hidden="true"></i>
+                    友人帐
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/donate/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
+                    赞赏
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
+                <a href="/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+                    关于
+                  </span>
+                </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/about/">
+                          <i class="fa fa-meetup" aria-hidden="true"></i>
+                          我？
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/theme-sakura/">
+                          <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                          主题
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/lab/">
+                          <i class="fa fa-cogs" aria-hidden="true"></i>
+                          Lab
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/atom.xml">
+                          <i class="fa fa-rss faa-pulse" aria-hidden="true"></i>
+                          RSS
+                        </a>
+                      </li>
+                    
+                  </ul>
+                
+              </li>
+            
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdn.bootcss.com/tocbot/4.10.1/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/mma324/hexobolg@master/hexobolg/imgtu2312.webp);" src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/hexobolg/img1441607770749111.gif" data-src="https://cdn.jsdelivr.net/gh/mma324/hexobolg@master/hexobolg/imgtu2312.webp">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      hexo-sakura主题美化第一篇如何安装使用他入门篇</h1>
+      <p class="entry-census">
+        <span>
+          <a href="https://mma324.github.io">
+            <img src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/hexobolg/imgkumaio.jpeg">
+          </a>
+        </span>
+        <span>
+          <a href="https://mma324.github.io">kumiao</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2020-4-17<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+	   <!-- 开始添加字数统计-->
+	      
+	        <div style="margin-top:10px;">
+	    <span class="post-time">
+	      <span class="post-meta-item-icon">
+	        <i class="fa fa-keyboard-o"></i>
+	        <span class="post-meta-item-text">  字数统计: </span>
+	        <!-- 安装插件npm install hexo-wordcount --save -->
+	        <span class="post-count">5.4k字</span>
+	      </span>
+	    </span>
+	
+	    <span class="post-time">
+	      &nbsp; | &nbsp;
+	      <span class="post-meta-item-icon">
+	        <i class="fa fa-hourglass-half"></i>
+	        <span class="post-meta-item-text">  阅读时长: </span>
+	        <span class="post-count">27分</span>
+	      </span>
+	    </span>
+	</div>
+	      
+	      <!-- 添加完成 -->
+    </header>
+  </div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>使用hexo服务搭建博客的好处有；</p>
+<p>1全是静态文件，访问速度快；</p>
+<p>2.主题插件多个性化</p>
+<p>3.不需要后台可以随意绑定自己的域名</p>
+<p>4.不用花一分钱就可以搭建一个博客，不需要服务器</p>
+<p>5.想恢复到哪个历史版本都行</p>
+<h4 id="感谢一下文章对我修改主题提拱帮助"><a href="#感谢一下文章对我修改主题提拱帮助" class="headerlink" title="感谢一下文章对我修改主题提拱帮助;"></a>感谢一下文章对我修改主题提拱帮助;</h4><p>Sakura主题美化 （<a href="https://mp.weixin.qq.com/s/OAyOA28-bTJLE6aKtzpoqg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/OAyOA28-bTJLE6aKtzpoqg</a> ）</p>
+<p>Hexo-neat插件优化提升访问效率 （<a href="https://blog.csdn.net/cungudafa/article/details/104327497）" target="_blank" rel="noopener">https://blog.csdn.net/cungudafa/article/details/104327497）</a></p>
+<p>还有啥来的不记得了谢谢了你们出的教程超级棒｡◕◡◕｡)ﾉ非常感谢</p>
+<h1 id="1-准备工作"><a href="#1-准备工作" class="headerlink" title="1.准备工作"></a>1.准备工作</h1><p>在开始一切之前，你必须已经（自行百度）；</p>
+<p>1.有一个github账号，没有的话去注册一个；</p>
+<p>2 .安装了Node.js , Git，Notepad++</p>
+<p>3.打开电脑wir+r在CMD中;</p>
+<pre><code>node -v //检查node版本
+npm -v //检查npm版本
+git --version //检查git版本
+</code></pre><h1 id="2塔建博客"><a href="#2塔建博客" class="headerlink" title="2塔建博客"></a>2塔建博客</h1><p>1.新建一个名为你的用户名.github.io的仓库，如果你的github用户名是wacq那么你新建的名字<!--wacq.github.io-->的仓库（必须是你的用户名，其它名称不会自己生成静态页）我自己就踩个坑README初始化也要勾上</p>
+<p>2.新建一个文件夹，用来存放自己的博客文件在该目录下右键点击<em>Git Bash Here</em>关闭cmd窗口</p>
+<pre><code>npm i hexo-cli -g //安装Hexo
+hexo -v  //验证是否安装成功
+hexo init //初始化文件夹
+npm install //组件
+hexo g //生成静态页
+hexo s //浏览静态页
+ctrl+c //关闭本地服务器
+</code></pre><h3 id="3-连接Github与本地"><a href="#3-连接Github与本地" class="headerlink" title="3.连接Github与本地"></a>3.连接Github与本地</h3><p>桌面右键点击Git Bash Here然后输入下面命令：</p>
+<pre><code>git config --global user.name &quot;ladada&quot; //github用户名
+git config --global user.email &quot;36214211@qq.com&quot; //注册邮箱地址
+</code></pre><p>生成密钥SSH key</p>
+<pre><code>ssh-keygen -t rsa -C &quot;36214211@qq.com&quot; //生成密钥
+cat ~/.ssh/id_rsa.pub //査看密钥
+</code></pre><p>复制下面密钥到github网站打开头像点击settings再点击SSH and GPG keys，新建一个SSH，名字随便下面你复制密钥点击确定保存。看不懂百度一键翻译网页</p>
+<pre><code>ssh -T git@github.com //github配对上有你用户名就ok了
+</code></pre><p>博客的配置文件根目录下的config.yml文件，在这里你可以修改与博客相关的各种信息。</p>
+<p>修改最后一行的配置：</p>
+<pre><code>deploy:
+  type: git
+  repository: https://github.com/gadsang/gadsang.github.io //改这github地址
+  branch: master
+</code></pre><p>改好后这么发布</p>
+<pre><code>hexo g //生成静态页
+hexo d //发布静态页
+</code></pre><h3 id="4-写文章"><a href="#4-写文章" class="headerlink" title="4.写文章"></a>4.写文章</h3><p>博客根目录下右键打开git bash安装一个扩展</p>
+<pre><code>npm i hexo-deployer-git
+hexo new &quot;my-blog title&quot;//新建一篇文章
+</code></pre><h3 id="5-绑定域名"><a href="#5-绑定域名" class="headerlink" title="5.绑定域名"></a>5.绑定域名</h3><p>默认的域名是你github用户名加github.io，改打开你的github博客项目点击settings，拉到下面Custom domain处，填上你自己的域名，保存这时候你的项目根目录应该会出现一个名为CNAME没有的话自己新建CNAME文件不要后缀 </p>
+<pre><code>hexo g
+hexo d
+</code></pre><p>完了！</p>
+<h1 id="3-代码笔记"><a href="#3-代码笔记" class="headerlink" title="3.代码笔记"></a>3.代码笔记</h1><p>常用的到的代码</p>
+<pre><code>hexo g //生成静态页
+hexo s //浏览静态页
+hexo d //发布静态页
+hexo clean //清缓存改主题用的到
+hexo s -p 5000 //改浏览静态页端口
+hexo i //组件安装主题
+hexo new &quot;postName&quot; //新建文章
+hexo new page &quot;pageName&quot; //新建页面
+hexo generate //生成静态页面至public目录
+hexo server //开启预览访问端口（默认端口4000，&#39;ctrl + c&#39;关闭server）
+hexo help  // 查看帮助
+hexo v //查看Hexo的版本
+</code></pre><p><a href="https://zhuanlan.zhihu.com/p/35668237" target="_blank" rel="noopener">如果还是不会的吧你可以点击看看下面这文章更详细建议新手</a></p>
+<h1 id="4-Sakura主题调教"><a href="#4-Sakura主题调教" class="headerlink" title="4.Sakura主题调教"></a>4.Sakura主题调教</h1><h2 id="4-1基本修改"><a href="#4-1基本修改" class="headerlink" title="4.1基本修改"></a>4.1基本修改</h2><p>参考你下载的主题文章的介绍目录在你下载主题文件的\source\  <em>posts目录有详细的懒就写了要注意的我会写出来：</em></p>
+<p>1.要配置一个图床图片全部云端改也没用W(￣_￣)W这个地方坑自己没注意看在主题的config.yml;</p>
+<p>cdn: <a href="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources</a>  //CDN链接，建议建立一个属于自己的图床，然后图片里 img:/icon/xxx.png 将被代替为你图床链接加图片名如 <a href="https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/icon/xxx.png" target="_blank" rel="noopener">https://cdn.jsdelivr.net/gh/Natsuki-Kaede/Blog-Resources/icon/xxx.png</a></p>
+<p>2.开屏背景图片建议压缩图片为webp文件小快</p>
+<pre><code>bg:
+- https://cdn.jsdelivr.net/gh/Na/Blog@master/coveadar/cover.webp
+- https://cdn.jsdelivr.net/gh/Na/Blog@master/coveadar/cover.webp
+</code></pre><p>3.通讯社交配置 这个也要改你一改cdn图片就没有了主题大部分图片全在云端建议下载图片后在改cdn要不百度图片自己选吧下载后上传你图库加你图片名img:/icon/xxx.png就可以了注意/ICON/是你上传的那个文件夹后面是图片名</p>
+<h2 id="4-2个性化配置"><a href="#4-2个性化配置" class="headerlink" title="4.2个性化配置"></a>4.2个性化配置</h2><h3 id="2-2-1首屏文字"><a href="#2-2-1首屏文字" class="headerlink" title="2.2.1首屏文字"></a>2.2.1首屏文字</h3><p>首屏文字/头像hexo的首屏默认为头像，以下是修改为文字的教程:</p>
+<p>在\themes\Sakura\layout_partial中找到 headertop.ejs 将</p>
+<pre><code class="ejs">原代码复制cit+f搜索
+&lt;div class=&quot;header-tou&quot;&gt;
+   &lt;a href=&quot;&lt;%- theme.url%&gt;&quot;&gt;
+       &lt;img src=&quot;&lt;%- (theme.cdn || &#39;&#39;) + theme.avatar %&gt;&quot;&gt;
+   &lt;/a&gt;
+&lt;/div&gt;
+修改为：
+&lt;div class=&quot;header-tou&quot;&gt;
+   &lt;h1 class=&quot;center-text glitch is-glitching Ubuntu-font&quot; data-text=&quot;你想更换的文字&quot;&gt;你想更换的文字&lt;/h1&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="4-2-2鼠标点击特效"><a href="#4-2-2鼠标点击特效" class="headerlink" title="4.2.2鼠标点击特效"></a>4.2.2鼠标点击特效</h3><p>放在\themes\Sakura\layout\ _partial\layout.ejs</p>
+<pre><code class="js">&lt;script src=&quot;鼠标点击特效的链接&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/shehuizhuyi.js&quot;&gt;&lt;/script&gt;   //社会主义价值观文字
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/love.js&quot;&gt;&lt;/script&gt;   //点击出现爱心
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/clickBom.js&quot;&gt;&lt;/script&gt;   //气球爆炸（有点影响体验）
+//建议不要放三种
+</code></pre>
+<h3 id="4-2-3-背景效果和漂浮物效果"><a href="#4-2-3-背景效果和漂浮物效果" class="headerlink" title="4.2.3 背景效果和漂浮物效果"></a>4.2.3 背景效果和漂浮物效果</h3><p>放在\themes\Sakura\layout\ _partial\layout.ejs</p>
+<pre><code class="js">
+&lt;!--背景效果--&gt;
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/piao.js&quot;&gt;&lt;/script&gt;   //漂浮彩带，点击可变换
+
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/canvas-nest.min.js&quot;&gt;&lt;/script&gt;   //可随鼠标滚动并吸附的线条
+
+
+//漂浮物效果
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js&quot;&gt;&lt;/script&gt;   //樱花飘落
+
+&lt;script src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/snow.js&quot;&gt;&lt;/script&gt;   //雪花飘落
+//谨慎添加，略微影响阅读体验
+</code></pre>
+<h3 id="4-2-4live2d看板娘"><a href="#4-2-4live2d看板娘" class="headerlink" title="4.2.4live2d看板娘"></a>4.2.4live2d看板娘</h3><p>layout.ejs中添加</p>
+<pre><code>&lt;script src=&quot;https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js&quot;&gt;&lt;/script&gt;
+
+</code></pre><h3 id="4-2-5加入预加载"><a href="#4-2-5加入预加载" class="headerlink" title="4.2.5加入预加载"></a>4.2.5加入预加载</h3><p>sakura主题集成了图片懒加载，可是页面放到GitHub加载还是很慢，</p>
+<pre><code>&lt;script src=&quot;//instant.page/3.0.0&quot; type=&quot;module&quot; defer integrity=&quot;sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1&quot;&gt;&lt;/script&gt;
+
+</code></pre><h3 id="4-2-6添加一言API、诗词"><a href="#4-2-6添加一言API、诗词" class="headerlink" title="4.2.6添加一言API、诗词"></a>4.2.6添加一言API、诗词</h3><p>1.今日诗词网站 <a href="https://www.jinrishici.com/#添加到以前的描述那里，社交图标的上方首页" target="_blank" rel="noopener">https://www.jinrishici.com/#添加到以前的描述那里，社交图标的上方首页</a></p>
+<p>修改headertop.ejs找到下面的代码</p>
+<pre><code>&lt;div class=&quot;header-info&quot;&gt;  &lt;!-- 找到这个位置 --&gt;
+        &lt;!-- &lt;p&gt;&lt;%= theme.description %&gt;&lt;/p&gt; --&gt;  把这句注释掉        &lt;p id=&quot;jinrishici-sentence&quot;&gt;正在加载今日诗词....&lt;/p&gt;
+        &lt;script src=&quot;https://sdk.jinrishici.com/v2/browser/jinrishici.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+  &lt;!-- 添加上面的两句 --&gt;
+        &lt;div class=&quot;top-social_v2&quot;&gt;
+</code></pre><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL3dhbmcxMzc1ODMwMjQyL1BpY0dvLy9pbWcvMjAyMDAzMTMxMDM3MDUucG5n?x-oss-process=image/format,png" alt></p>
+<h5 id="2-首页下方通知也没啥用改了"><a href="#2-首页下方通知也没啥用改了" class="headerlink" title="2.首页下方通知也没啥用改了"></a>2.首页下方通知也没啥用改了</h5><p>修改index.ejs，查找<code>&lt;%= theme.notice%&gt;</code>，将其替换为下面的</p>
+<pre><code class="ejs">
+&lt;span id=&quot;hitokoto&quot; style=&quot;margin-left:5px;&quot;&gt; :D 获取中...&lt;/span&gt;
+      &lt;p align=&quot;right&quot; id=&quot;afrom&quot;&gt;&lt;/p&gt;
+      &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js&quot;&gt;&lt;/script&gt;
+      &lt;script src=&quot;https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js&quot;&gt;&lt;/script&gt;
+      &lt;script&gt;
+        fetch(&#39;https://v1.hitokoto.cn/?c=h&#39;)
+          .then(function (res){
+            return res.json();
+          })
+          .then(function (data) {
+            var hitokoto = document.getElementById(&#39;hitokoto&#39;);
+            var afrom = document.getElementById(&#39;afrom&#39;);
+            hitokoto.innerText = data.hitokoto;
+            afrom.innerText =  &#39;——【&#39; + data.from + &#39; &#39; + data.from_who + &#39;】&#39;;
+          })
+          .catch(function (err) {
+            console.error(err);
+          })
+      &lt;/script&gt;
+</code></pre>
+<p><img src="https://cdn.jsdelivr.net/gh/mma324/hexobolg@master/hexobolg/imgtu3211.webp" alt></p>
+<h3 id="4-2-7网站运行时间"><a href="#4-2-7网站运行时间" class="headerlink" title="4.2.7网站运行时间"></a>4.2.7网站运行时间</h3><p>footer.ejs选择合适位置添加代码</p>
+<pre><code class="ejs">&lt;span id=&quot;timeDate&quot;&gt;载入天数...&lt;/span&gt;&lt;span id=&quot;times&quot;&gt;载入时分秒...&lt;/span&gt;&lt;script&gt;
+  var now = new Date();
+  function createtime() {
+    var grt= new Date(&quot;03/08/2020 16:44:00&quot;);//此处修改你的建站时间或者网站上线时间
+    now.setTime(now.getTime()+250);
+    days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+    hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+    if(String(hnum).length ==1 ){hnum = &quot;0&quot; + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+    mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = &quot;0&quot; + mnum;}
+    seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+    snum = Math.round(seconds); if(String(snum).length ==1 ){snum = &quot;0&quot; + snum;}
+    document.getElementById(&quot;timeDate&quot;).innerHTML = &quot;本站已安全运行 &quot;+dnum+&quot; 天 &quot;;
+    document.getElementById(&quot;times&quot;).innerHTML = hnum + &quot; 小时 &quot; + mnum + &quot; 分 &quot; + snum + &quot; 秒&quot;;
+  }
+  setInterval(&quot;createtime()&quot;,250);&lt;/script&gt;
+</code></pre>
+<h3 id="4-2-8底部动态滚动文字"><a href="#4-2-8底部动态滚动文字" class="headerlink" title="4.2.8底部动态滚动文字"></a>4.2.8底部动态滚动文字</h3><p>footer.ejs选择合适位置添加代码</p>
+<pre><code class="ejs">&lt;div id=&quot;binft&quot;&gt;&lt;/div&gt;
+  &lt;script&gt;
+    var binft = function (r) {
+      function t() {
+        return b[Math.floor(Math.random() * b.length)]
+      }
+      function e() {
+        return String.fromCharCode(94 * Math.random() + 33)
+      }
+      function n(r) {
+        for (var n = document.createDocumentFragment(), i = 0; r &gt; i; i++) {
+          var l = document.createElement(&quot;span&quot;);
+          l.textContent = e(), l.style.color = t(), n.appendChild(l)
+        }
+        return n
+      }
+      function i() {
+        var t = o[c.skillI];
+        c.step ? c.step-- : (c.step = g, c.prefixP &lt; l.length ? (c.prefixP &gt;= 0 &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++) : &quot;forward&quot; === c.direction ? c.skillP &lt; t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = &quot;backward&quot;, c.delay = a) : c.skillP &gt; 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = &quot;forward&quot;)), r.textContent = c.text, r.appendChild(n(c.prefixP &lt; l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+      }
+      var l = &quot;&quot;,
+      o = [&quot;青青陵上柏，磊磊涧中石。&quot;, &quot;人生天地间，忽如远行客。&quot;,&quot;斗酒相娱乐，聊厚不为薄。&quot;, &quot;驱车策驽马，游戏宛与洛。&quot;,&quot;洛中何郁郁，冠带自相索。&quot;,&quot;长衢罗夹巷，王侯多第宅。&quot;,&quot;两宫遥相望，双阙百余尺。&quot;,&quot;极宴娱心意，戚戚何所迫？&quot;].map(function (r) {
+      return r + &quot;&quot;
+      }),
+      a = 2,
+      g = 1,
+      s = 5,
+      d = 75,
+      b = [&quot;rgb(110,64,170)&quot;, &quot;rgb(150,61,179)&quot;, &quot;rgb(191,60,175)&quot;, &quot;rgb(228,65,157)&quot;, &quot;rgb(254,75,131)&quot;, &quot;rgb(255,94,99)&quot;, &quot;rgb(255,120,71)&quot;, &quot;rgb(251,150,51)&quot;, &quot;rgb(226,183,47)&quot;, &quot;rgb(198,214,60)&quot;, &quot;rgb(175,240,91)&quot;, &quot;rgb(127,246,88)&quot;, &quot;rgb(82,246,103)&quot;, &quot;rgb(48,239,130)&quot;, &quot;rgb(29,223,163)&quot;, &quot;rgb(26,199,194)&quot;, &quot;rgb(35,171,216)&quot;, &quot;rgb(54,140,225)&quot;, &quot;rgb(76,110,219)&quot;, &quot;rgb(96,84,200)&quot;],
+      c = {
+        text: &quot;&quot;,
+        prefixP: -s,
+        skillI: 0,
+        skillP: 0,
+        direction: &quot;forward&quot;,
+        delay: a,
+        step: g
+      };
+      i()
+      };
+      binft(document.getElementById(&#39;binft&#39;));
+  &lt;/script&gt;
+</code></pre>
+<h3 id="4-2-9加入天气插件"><a href="#4-2-9加入天气插件" class="headerlink" title="4.2.9加入天气插件"></a>4.2.9加入天气插件</h3><p>前往中国天气 <a href="https://cj.weather.com.cn/plugin/pc添加到link.ejs中" target="_blank" rel="noopener">https://cj.weather.com.cn/plugin/pc添加到link.ejs中</a></p>
+<h3 id="4-3-1在线联系"><a href="#4-3-1在线联系" class="headerlink" title="4.3.1在线联系"></a>4.3.1在线联系</h3><p>前往网站</p>
+<p>DaoVoice <a href="https://www.daovoice.io/" target="_blank" rel="noopener">https://www.daovoice.io/</a></p>
+<p>可以使用GitHub或者微信登录，也可以前往</p>
+<p>这里注册 <a href="http://dashboard.daovoice.io/get-started" target="_blank" rel="noopener">http://dashboard.daovoice.io/get-started</a></p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL3dhbmcxMzc1ODMwMjQyL1BpY0dvLy9pbWcvMjAyMDAzMTMxMDQzNDIucG5n?x-oss-process=image/format,png" alt>图片转载</p>
+<h3 id="4-3-2添加优美的标签页"><a href="#4-3-2添加优美的标签页" class="headerlink" title="4.3.2添加优美的标签页"></a>4.3.2添加优美的标签页</h3><p>修改主题配置文件，将这两行代码放到留言板之前</p>
+<pre><code>  标签: {path: /tags/, fa: fa-tag }
+  分类: {path: /categories/, fa: fa-bookmark }
+</code></pre><h6 id="图片转载"><a href="#图片转载" class="headerlink" title="图片转载"></a>图片转载</h6><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL3dhbmcxMzc1ODMwMjQyL1BpY0dvLy9pbWcvMjAyMDAzMTMxMDQ0MDAucG5n?x-oss-process=image/format,png" alt></p>
+<p>首先我们要创建几个文件，文件所在目录如下</p>
+<ul>
+<li><p>layout</p>
+<p>tags.ejs</p>
+</li>
+<li><p>_partial</p>
+</li>
+<li><p>_widget</p>
+<p>tag-cloud.ejs</p>
+<p>tag-wordcloud.ejs</p>
+<p>1.tags.ejs放在layout根目录下，下面两个文件放在layout子目录_widget下</p>
+<p>tags.ejs</p>
+</li>
+</ul>
+<pre><code class="ejs">&lt;%- partial(&#39;_partial/header&#39;) %&gt;
+
+&lt;main class=&quot;content&quot;&gt;
+
+    &lt;%- partial(&#39;_widget/tag-cloud&#39;) %&gt;
+
+    &lt;%- partial(&#39;_widget/tag-wordcloud&#39;) %&gt;
+
+&lt;/main&gt;
+</code></pre>
+<p>2._widget/tag-cloud.ejs</p>
+<pre><code class="ejs">&lt;%
+var colorArr = [&#39;#F9EBEA&#39;, &#39;#F5EEF8&#39;, &#39;#D5F5E3&#39;, &#39;#E8F8F5&#39;, &#39;#FEF9E7&#39;,
+    &#39;#F8F9F9&#39;, &#39;#82E0AA&#39;, &#39;#D7BDE2&#39;, &#39;#A3E4D7&#39;, &#39;#85C1E9&#39;, &#39;#F8C471&#39;, &#39;#F9E79F&#39;, &#39;#FFF&#39;];
+var colorCount = colorArr.length;
+var hashCode = function (str) {
+    if (!str &amp;&amp; str.length === 0) {
+        return 0;
+    }
+
+    var hash = 0;
+    for (var i = 0, len = str.length; i &lt; len; i++) {
+        hash = ((hash &lt;&lt; 5) - hash) + str.charCodeAt(i);
+        hash |= 0;
+    }
+    return hash;
+};
+var i = 0;
+var isTag = is_tag();
+%&gt;
+
+&lt;div id=&quot;tags&quot; class=&quot;container chip-container&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-content&quot;&gt;
+            &lt;div class=&quot;tag-title center-align&quot;&gt;
+                &lt;i class=&quot;fa fa-tags&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;文章标签
+            &lt;/div&gt;
+            &lt;div class=&quot;tag-chips&quot;&gt;
+                &lt;% site.tags.map(function(tag) { %&gt;
+                &lt;%
+                    i++;
+                    var color = i &gt;= colorCount ? colorArr[Math.abs(hashCode(tag.name) % colorCount)]
+                            : colorArr[i - 1];
+                %&gt;
+                &lt;a href=&quot;&lt;%- url_for(tag.path) %&gt;&quot; title=&quot;&lt;%- tag.name %&gt;: &lt;%- tag.length %&gt;&quot;&gt;
+                    &lt;span class=&quot;chip center-align waves-effect waves-light
+                            &lt;% if (isTag &amp;&amp; tag.name == page.tag) { %&gt; chip-active &lt;% } else { %&gt; chip-default &lt;% } %&gt;&quot;
+                            data-tagname=&quot;&lt;%- tag.name %&gt;&quot; style=&quot;background-color: &lt;%- color %&gt;;&quot;&gt;&lt;%- tag.name %&gt;
+                        &lt;span class=&quot;tag-length&quot;&gt;&lt;%- tag.length %&gt;&lt;/span&gt;
+                    &lt;/span&gt;
+                &lt;/a&gt;
+                &lt;% }); %&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>3._widget/tag-wordcloud.ejs</p>
+<pre><code class="ejs">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/css/jqcloud.css&quot;&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+&lt;/style&gt;
+
+&lt;div class=&quot;container&quot; data-aos=&quot;fade-up&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div id=&quot;tag-wordcloud&quot; class=&quot;card-content&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/jqcloud-1.0.4.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    &lt;%
+    let tagWordArr = [];
+    site.tags.map(function(tag) {
+        tagWordArr.push({&#39;text&#39;: tag.name, &#39;weight&#39;: tag.length, &#39;link&#39;: tag.permalink});
+    });
+
+    let tagWords = JSON.stringify(tagWordArr);
+    %&gt;
+
+    $(&#39;#tag-wordcloud&#39;).jQCloud(&lt;%- tagWords %&gt;, {
+        autoResize: true
+    });
+&lt;/script&gt;
+</code></pre>
+<p>4.将这段代码复制到style.css末尾</p>
+<pre><code class="css">.chip-container {    margin-top: 60px;}.chip-container .tag-title {    margin-bottom: 10px;    color: #3C4858;    font-size: 1.75rem;    font-weight: 400;}.chip-container .tag-chips {    margin: 1rem auto 0.5rem;    max-width: 850px;    text-align: center;}.chip-container .tags-posts {    margin-top: 20px;}.chip-container .chip-default {    color: #34495e;}.chip-container .chip-active {    color: #FFF !important;    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%) !important;    box-shadow: 2px 5px 10px #aaa !important;}.chip-container .chip {    margin: 10px 10px;    padding: 19px 14px;    display: inline-flex;    line-height: 0;    font-size: 1rem;    font-weight: 500;    border-radius: 5px;    cursor: pointer;    box-shadow: 0 3px 5px rgba(0, 0, 0, .12);}.chip-container .chip:hover {    color: #fff;    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important;}.chip .tag-length {    margin-left: 5px;    margin-right: -2px;    font-size: 0.5rem;}.chip-default .tag-length {    color: #e91e63;    margin-top: 1px;}.chip-active .tag-length {    color: #fff;}.tag-title.center-align{    margin-top: 100px;    text-align : center;}
+
+</code></pre>
+<p>使用命令<code>hexo new page &quot;tags&quot;</code>，修改博客根目录下source/tags/index.md</p>
+<pre><code>---
+title: tags
+date: 2020-03-09 13:50:05
+layout: tags
+---
+</code></pre><p>5.在 hexo g hexo s查看页面</p>
+<h3 id="4-3-3优美的分类页"><a href="#4-3-3优美的分类页" class="headerlink" title="4.3.3优美的分类页"></a>4.3.3优美的分类页</h3><p><img src="https://s1.ax1x.com/2020/03/13/8ndoeH.png" alt></p>
+<p>接着创建几个文件，文件所在目录如下layout创建categories.ejs ，layout的_widget创建category-cloud.ejs，</p>
+<p>category-radar.ejs</p>
+<p>categories.ejs放在layout根目录下</p>
+<p>添加代码categories.ejs</p>
+<pre><code>&lt;%- partial(&#39;_partial/header&#39;) %&gt;
+&lt;main class=&quot;content&quot;&gt;
+
+    &lt;%- partial(&#39;_widget/category-cloud&#39;) %&gt;
+
+    &lt;% if (site.categories &amp;&amp; site.categories.length &gt; 0) { %&gt;
+    &lt;%- partial(&#39;_widget/category-radar&#39;) %&gt;
+    &lt;% } %&gt;
+
+&lt;/main&gt;
+</code></pre><p>layout子目录_widget下category-cloud.ejs</p>
+<pre><code>&lt;%
+var colorArr = [&#39;#F9EBEA&#39;, &#39;#F5EEF8&#39;, &#39;#D5F5E3&#39;, &#39;#E8F8F5&#39;, &#39;#FEF9E7&#39;,
+    &#39;#F8F9F9&#39;, &#39;#82E0AA&#39;, &#39;#D7BDE2&#39;, &#39;#A3E4D7&#39;, &#39;#85C1E9&#39;, &#39;#F8C471&#39;, &#39;#F9E79F&#39;, &#39;#FFF&#39;];
+var colorCount = colorArr.length;
+var hashCode = function (str) {
+    if (!str &amp;&amp; str.length === 0) {
+        return 0;
+    }
+
+    var hash = 0;
+    for (var i = 0, len = str.length; i &lt; len; i++) {
+        hash = ((hash &lt;&lt; 5) - hash) + str.charCodeAt(i);
+        hash |= 0;
+    }
+    return hash;
+};
+var i = 0;
+var isCategory = is_category();
+%&gt;
+
+&lt;div id=&quot;category-cloud&quot; class=&quot;container chip-container&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-content&quot;&gt;
+            &lt;div class=&quot;tag-title center-align&quot;&gt;
+                &lt;i class=&quot;fa fa-bookmark&quot;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;文章分类
+            &lt;/div&gt;
+            &lt;div class=&quot;tag-chips&quot;&gt;
+                &lt;% if (site.categories &amp;&amp; site.categories.length &gt; 0) { %&gt;
+                &lt;% site.categories.map(function(category) { %&gt;
+                &lt;%
+                    i++;
+                    var color = i &gt;= colorCount ? colorArr[Math.abs(hashCode(category.name) % colorCount)]
+                            : colorArr[i - 1];
+                %&gt;
+                &lt;a href=&quot;&lt;%- url_for(category.path) %&gt;&quot; title=&quot;&lt;%- category.name %&gt;: &lt;%- category.length %&gt;&quot;&gt;
+                    &lt;span class=&quot;chip center-align waves-effect waves-light
+                            &lt;% if (isCategory &amp;&amp; category.name == page.category) { %&gt; chip-active &lt;% } else { %&gt; chip-default &lt;% } %&gt;&quot;
+                            style=&quot;background-color: &lt;%- color %&gt;;&quot;&gt;&lt;%- category.name %&gt;
+                        &lt;span class=&quot;tag-length&quot;&gt;&lt;%- category.length %&gt;&lt;/span&gt;
+                    &lt;/span&gt;
+                &lt;/a&gt;
+                &lt;% }); %&gt;
+                &lt;% } else { %&gt;
+                &lt;%= __(&#39;categoryEmptyTip&#39;) %&gt;
+                &lt;% } %&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre><p>layout子目录_widget下category-radar.ejs</p>
+<pre><code>&lt;style type=&quot;text/css&quot;&gt;
+    #category-radar {
+        margin-top: 50px;
+        width: 100%;
+        height: 360px;
+    }
+&lt;/style&gt;
+
+&lt;div class=&quot;container&quot; data-aos=&quot;fade-up&quot;&gt;
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div id=&quot;category-radar&quot; class=&quot;card-content&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/js/echarts.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    let radarChart = echarts.init(document.getElementById(&#39;category-radar&#39;));
+
+    &lt;%
+        var categories = site.categories;
+
+        // Find the maximum and average values of the post categories.
+        var radarValueArr = [];
+        categories.some(function(category) {
+            radarValueArr.push(category.length);
+        });
+
+        var max = Math.max.apply(null, radarValueArr) + Math.min.apply(null, radarValueArr);
+
+        // Calculate the data needed for the radar chart.
+        var indicatorArr = [];
+        categories.map(function(category) {
+            indicatorArr.push({&#39;name&#39;: category.name, &#39;max&#39;: max});
+        });
+
+        var indicatorData = JSON.stringify(indicatorArr);
+        var radarValueData = JSON.stringify(radarValueArr);
+    %&gt;
+
+    let option = {
+        title: {
+            left: &#39;center&#39;,
+            text: &#39;文章分类雷达图&#39;,
+            textStyle: {
+                fontWeight: 500,
+                fontSize: 22
+            }
+        },
+        tooltip: {},
+        radar: {
+            name: {
+                textStyle: {
+                    color: &#39;#3C4858&#39;
+                }
+            },
+            indicator: &lt;%- indicatorData %&gt;,
+            nameGap: 5,
+            center: [&#39;50%&#39;,&#39;55%&#39;],
+            radius: &#39;66%&#39;
+        },
+        series: [{
+            type: &#39;radar&#39;,
+            color: [&#39;#3ecf8e&#39;],
+            itemStyle: {normal: {areaStyle: {type: &#39;default&#39;}}},
+            data : [
+                {
+                    value : &lt;%- radarValueData %&gt;,
+                    name : &#39;文章分类数量&#39;
+                }
+            ]
+        }]
+    };
+
+    radarChart.setOption(option);
+&lt;/script&gt;
+</code></pre><p>接着用命令<code>hexo new page &quot;categories&quot;</code>创建分类页修改博客根目录下source/categories/index.md</p>
+<pre><code>---
+title: categories
+date: 2020-03-09 13:50:05
+layout: categories
+---
+</code></pre><p>查看<a href="http://localhost:4000/categories" target="_blank" rel="noopener">http://localhost:4000/categories</a></p>
+<h3 id="4-3-4字数统计和阅读时长"><a href="#4-3-4字数统计和阅读时长" class="headerlink" title="4.3.4字数统计和阅读时长"></a>4.3.4字数统计和阅读时长</h3><p>1.先安装相关插件，终端输入以下命令</p>
+<pre><code>npm install hexo-wordcount --save
+</code></pre><ol start="2">
+<li><p>文件配置在<code>theme\sakura\layout\_partial\</code>下创建word.ejs文件</p>
+<pre><code>&lt;div style=&quot;margin-top:10px;&quot;&gt;
+        &lt;span class=&quot;post-time&quot;&gt;
+          &lt;span class=&quot;post-meta-item-icon&quot;&gt;
+            &lt;i class=&quot;fa fa-keyboard-o&quot;&gt;&lt;/i&gt;
+            &lt;span class=&quot;post-meta-item-text&quot;&gt;  字数统计: &lt;/span&gt;
+            &lt;!-- 安装插件npm install hexo-wordcount --save --&gt;
+            &lt;span class=&quot;post-count&quot;&gt;&lt;%= wordcount(post.content) %&gt;字&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/span&gt;
+
+        &lt;span class=&quot;post-time&quot;&gt;
+          &amp;nbsp; | &amp;nbsp;
+          &lt;span class=&quot;post-meta-item-icon&quot;&gt;
+            &lt;i class=&quot;fa fa-hourglass-half&quot;&gt;&lt;/i&gt;
+            &lt;span class=&quot;post-meta-item-text&quot;&gt;  阅读时长: &lt;/span&gt;
+            &lt;span class=&quot;post-count&quot;&gt;&lt;%= min2read(post.content) %&gt;分&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+</code></pre><p>3.在\themes\sakura\layout_widget\common-article.ejs文章标题中合适位置添加：（添加在 <code>headr</code> 标签前）</p>
+<pre><code>&lt;!-- 开始添加字数统计--&gt;
+          &lt;% if(theme.word_count &amp;&amp; !post.no_word_count){%&gt;
+            &lt;%- partial(&#39;_partial/word&#39;) %&gt;
+          &lt;% } %&gt;
+          &lt;!-- 添加完成 
+</code></pre><p>4.在<code>MyWeb\themes\sakura\_config.yml</code>配置文末添加</p>
+<pre><code>word_count: true
+</code></pre><p>在_post目录写md文章时，应该加上作者信息：<br>author（名称），authorLink（链接），avatar（头像），authorAbout（简介）</p>
+<p>5.在\themes\sakura\layout_widget\common-article.ejs文章标题中可修改样式：</p>
+</li>
+</ol>
+<h3 id="4-3-5插件"><a href="#4-3-5插件" class="headerlink" title="4.3.5插件"></a>4.3.5插件</h3><p>字数统计  npm i –save hexo-wordcount 安装</p>
+<p>图片懒加载   hexo-lazyload-image-enhance <a href="https://github.com/barretlee/hexo-lazyload-image-enhance" target="_blank" rel="noopener">https://github.com/barretlee/hexo-lazyload-image-enhance</a></p>
+<p>画板娘     hexo-helper-live2d <a href="https://github.com/EYHN/hexo-helper-live2d" target="_blank" rel="noopener">https://github.com/EYHN/hexo-helper-live2d</a></p>
+<h3 id="4-3-6添加404页面"><a href="#4-3-6添加404页面" class="headerlink" title="4.3.6添加404页面"></a>4.3.6添加404页面</h3><p>在博客根目录的source目录下新建404.html随便找个模板，在开头加入代码</p>
+<pre><code>---
+layout: false
+---
+</code></pre><h3 id="4-3-7博客备份"><a href="#4-3-7博客备份" class="headerlink" title="4.3.7博客备份"></a>4.3.7博客备份</h3><p>hexo-git-backup <a href="https://github.com/coneycode/hexo-git-backup能够传到backup分支也可以把整个博客文件夹上传到GitHub私有仓库" target="_blank" rel="noopener">https://github.com/coneycode/hexo-git-backup能够传到backup分支也可以把整个博客文件夹上传到GitHub私有仓库</a></p>
+<h2 id="5加速与体验优化建议"><a href="#5加速与体验优化建议" class="headerlink" title="5加速与体验优化建议"></a>5加速与体验优化建议</h2><p>托管于GitHub Pages的博客速度总是不尽人意，Sakura主题加载了大量的资源，本身性能并不太好，这里提供一些加速方法，分为托管于GitHub Pages的加速方法和其他加速方法。 这里主要针对未备案域名.毕竟已备案的域名可以用国内的各种服务。</p>
+<h3 id="5-1图片加速"><a href="#5-1图片加速" class="headerlink" title="5.1图片加速"></a>5.1图片加速</h3><p>用github+jsdelivr塔建图床加速图片加载速度jsDelivr 是国外的一家优秀的公共 CDN 服务提供商jsDelivr有一个十分好用的功能——<strong>它可以加速 Github 仓库的文件</strong>。我们可以借此搭建一个免费、全球访问速度超快的图床，使用 PicGo<a href="https://blog.iljw.me/2019/05/jsdelivr-cdn-github.html#fn3" target="_blank" rel="noopener">3</a>将图片上传到指定 Github 仓库位置，再利用 jsDelivr 获得图片加速</p>
+<h3 id="5-2Cloudflare-CDN替换为国内CDN"><a href="#5-2Cloudflare-CDN替换为国内CDN" class="headerlink" title="5.2Cloudflare CDN替换为国内CDN"></a>5.2Cloudflare CDN替换为国内CDN</h3><p>换成国内的BootCDN速度蛮不错在 \themes\Sakura\source\js\ 中找到 sakura-app.js</p>
+<pre><code>$.getScript(&#39;//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML&#39;, function () {
+</code></pre><p>换</p>
+<pre><code>$.getScript(&#39;//cdn.bootcss.com/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML&#39;, function () {
+</code></pre><p>在 \themes\Sakura\layout_widget\ 中找到 common-article.ejs</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css&quot;&gt;
+</code></pre><p>换</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.bootcss.com/tocbot/4.10.1/tocbot.css&quot;&gt;
+</code></pre><h3 id="5-3启用压缩"><a href="#5-3启用压缩" class="headerlink" title="5.3启用压缩"></a>5.3启用压缩</h3><h5 id="5-3-1GULP压缩"><a href="#5-3-1GULP压缩" class="headerlink" title="5.3.1GULP压缩"></a>5.3.1GULP压缩</h5><p>博客根目录下打开Git Bash，输入</p>
+<pre><code>npm install gulp -g
+
+npm install gulp-minify-css gulp-uglify gulp-htmlmin gulp-htmlclean gulp --save
+
+</code></pre><p>在博客根目录下创建文件 gulpfile.js</p>
+<pre><code>var gulp = require(&#39;gulp&#39;);
+var minifycss = require(&#39;gulp-minify-css&#39;);
+var uglify = require(&#39;gulp-uglify&#39;);
+var htmlmin = require(&#39;gulp-htmlmin&#39;);
+var htmlclean = require(&#39;gulp-htmlclean&#39;);
+var imagemin = require(&#39;gulp-imagemin&#39;);
+
+gulp.task(&#39;minify-html&#39;, function() {
+
+    return gulp.src(&#39;./public/**/*.html&#39;)
+        .pipe(htmlclean())
+        .pipe(htmlmin({
+            removeComments: true,
+            minifyJS: true,
+            minifyCSS: true,
+            minifyURLs: true,
+        }))
+        .pipe(gulp.dest(&#39;./public&#39;))
+});
+
+
+gulp.task(&#39;minify-css&#39;, function() {
+    return gulp.src(&#39;./public/**/*.css&#39;)
+        .pipe(minifycss({
+            compatibility: &#39;ie8&#39;
+        }))
+        .pipe(gulp.dest(&#39;./public&#39;));
+});
+
+
+gulp.task(&#39;minify-js&#39;, function() {
+    return gulp.src(&#39;./public/js/**/*.js&#39;)
+        .pipe(uglify())
+        .pipe(gulp.dest(&#39;./public&#39;));
+});
+
+
+gulp.task(&#39;minify-images&#39;, function() {
+    return gulp.src(&#39;./public/images/**/*.*&#39;)
+        .pipe(imagemin(
+        [imagemin.gifsicle({&#39;optimizationLevel&#39;: 3}), 
+        imagemin.jpegtran({&#39;progressive&#39;: true}), 
+        imagemin.optipng({&#39;optimizationLevel&#39;: 7}), 
+        imagemin.svgo()],
+        {&#39;verbose&#39;: true}))
+        .pipe(gulp.dest(&#39;./public/images&#39;))
+});
+
+
+gulp.task(&#39;default&#39;, [
+    &#39;minify-html&#39;,&#39;minify-css&#39;,&#39;minify-js&#39;,&#39;minify-images&#39;
+]);
+
+</code></pre><h2 id="还有啥来的慢慢更吧-W-￣-￣-W…"><a href="#还有啥来的慢慢更吧-W-￣-￣-W…" class="headerlink" title="还有啥来的慢慢更吧 W(￣_￣)W….."></a>还有啥来的慢慢更吧 W(￣_￣)W…..</h2>
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/img/custom/donate/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/img/custom/donate/WeChanQR.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+		
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2020/04/17/my-bloga/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/hexobolg/img1441607770749111.gif" data-src="https://cdn.jsdelivr.net/gh/mma324/hexobolg@master/hexobolg/imgtu321.webp" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/mma324/hexobolg@master/hexobolg/imgtu321.webp">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                我的一篇blog文章</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz",
+        appKey: "mgOpfzbkHYqU92CV4IDlAUHQ",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="https://mma324.github.io" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/hexobolg/imgkumaio.jpeg" itemprop="image" alt="kumiao" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="https://mma324.github.io" itemprop="url" rel="author">kumiao</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>一个学习记录者</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
+</div>
+
+
+
+
+    </div>    
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            // PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+    <!-- <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 酷喵BLOG<br>
+      powered_by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer> -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="site-info">
+    <div class="footertext">
+      <div class="img-preload">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
+        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
+      </div>
+       <p style="color: ;"><i class="iconfont icon-sakura rotating" style="color: #ff8000;display:inline-block;font-size:26px"></i></p>
+    </div>
+    <div class="footer-device">
+    <p style="font-family: 'Ubuntu', sans-serif;">
+        <span style="color: #666666;">Copyright&copy; 2020 by<i class="iconfont icon-sakura rotating" style="color: #ff8000;display:inline-block"></i>酷喵BOLG  </a>
+ </span>
+      </p>
+	  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span><script>
+  var now = new Date();
+  function createtime() {
+    var grt= new Date("03/08/2020 16:44:00");//此处修改你的建站时间或者网站上线时间
+    now.setTime(now.getTime()+250);
+    days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+    hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+    if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+    mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+    seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+    snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+    document.getElementById("timeDate").innerHTML = "博客已 "+dnum+" 天 ";
+    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+  }
+  setInterval("createtime()",250);</script>
+    </div>
+  </div><!-- .site-info -->
+</footer>
+
+<div style="text-align:center;">
+      <div class="github-badge">
+        <a rel="license" href="https://hexo.io/" target="_blank" title="由Hexo强力驱动">
+        <span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo</span></a>
+      </div>
+      <div class="github-badge">
+        <a rel="license" href="https://github.io/" target="_blank" title="静态网页托管于Github">
+        <span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">Github</span></a>
+      </div>
+      <div class="github-badge">
+          <a rel="license" href="https://sm.ms/" target="_blank" title="SM.MS提供图床服务">
+          <span class="badge-subject">PictureBed</span><span class="badge-value bg-blueviolet">Github&SM</span></a>
+      </div>
+      <div class="github-badge">
+          <a rel="license" href="https://github.com/honjun/hexo-theme-sakura/" target="_blank" title="站点使用 Sakura 主题，作者：Mashiro & Hojun">
+          <span class="badge-subject">Theme</span><span class="badge-value bg-blue">Sakura</span></a>
+      </div>
+      <div class="github-badge">
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可">
+          <span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a>
+      </div>
+      <div class="github-badge">
+        <span class="badge-subject">UV</span><span class="badge-value bg-#2196F3" id="busuanzi_value_site_uv"></span>
+      </div>
+      <div class="github-badge">
+        <span class="badge-subject">PV</span><span class="badge-value bg-brightgreen" id="busuanzi_value_site_pv"></span>
+      </div><br><br>
+	  
+<style>
+.github-badge {
+display: inline-block;
+border-radius: 4px;
+text-shadow: none;
+font-size: 12px;
+color: #fff;
+line-height: 12px;
+background-color: #ABBAC3;
+margin-bottom: 5px;
+}
+.github-badge .badge-subject {
+  display: inline-block;
+  background-color: #4D4D4D;
+  padding: 4px 4px 4px 6px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  color:#fff;
+}
+.github-badge .badge-value {
+  display: inline-block;
+  padding: 4px 6px 4px 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color:#fff;
+}
+.github-badge .bg-brightgreen {
+  background-color: #4DC820 !important;
+}
+.github-badge .bg-#2196F3 {
+  background-color: #FFA500 !important;
+}
+.github-badge .bg-yellow {
+  background-color: #D8B024 !important;
+}
+.github-badge .bg-blueviolet {
+  background-color: #8833D7 !important;
+}
+.github-badge .bg-pink {
+  background-color: #F26BAE !important;
+}
+.github-badge .bg-red {
+  background-color: #e05d44 !important;
+}
+.github-badge .bg-blue {
+  background-color: #007EC6 !important;
+}
+.github-badge .bg-lightgrey {
+  background-color: #9F9F9F !important;
+}
+.github-badge .bg-grey,
+.github-badge .bg-gray {
+  background-color: #555 !important;
+}
+.github-badge .bg-lightgrey,
+.github-badge .bg-lightgray {
+  background-color: #9f9f9f !important;
+}
+</style>
+</div>
+
+
+
+
+<!-- <script src="/js/tocbot.js"></script> -->
+<script type="text/javascript" src="/js/lib.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/InsightSearch.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="/js/zoom.min.js"></script>
+<script type="text/javascript" src="/js/sakura-app.js"></script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine@1.3.4/dist/Valine.min.js'></script>
+<script src="/js/botui.js"></script>
+<!-- 博客平滑滚动视觉反馈 -->
+<script src="https://cdn.jsdelivr.net/gh/fz6m/Private-web@1.4/js/custom/slide.js"></script>
+<!-- 不蒜子 网页计数器 -->
+<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
+<script type="text/javascript">
+/* <![CDATA[ */
+if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"close"},"windowheight":"fixed","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+} else {
+  var Poi = {"pjax":"1","movies":{"url": "https://cdn.jsdelivr.net/gh/honjun/hojun@1.2","name":"Unbroken.mp4","live":"open"},"windowheight":"auto","codelamp":"close","ajaxurl":"","order":"asc","formpostion":"bottom"};
+}
+/* ]]> */
+
+</script>
+<script>
+$(document).ready(function() {
+  if ($(".toc").length > 0 && document.body.clientWidth > 1200) {
+    if ($(".pattern-center").length > 0) { //有图的情况
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -400,
+          scrollSmoothOffset: -85
+      });
+    } else {
+      tocbot.init({
+          // Where to render the table of contents.
+          tocSelector: '.toc', // 放置目录的容器
+          // Where to grab the headings to build the table of contents.
+          contentSelector: '.entry-content', // 正文内容所在
+          // Which headings to grab inside of the contentSelector element.
+          scrollSmooth: true,
+          headingSelector: 'h1, h2, h3, h4, h5', // 需要索引的标题级别
+          headingsOffset: -85,
+          scrollSmoothOffset: -85
+      });
+    }
+    var offsetTop = $('.toc').offset().top - 95;
+    window.onscroll = function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      if (scrollTop >= offsetTop) {
+        $('.toc').addClass('toc-fixed');
+      } else {
+        $('.toc').removeClass('toc-fixed');
+      }
+    }
+  }
+});
+</script>
+
+    <div class="openNav no-select" style="height: 50px;">
+      <div class="iconflat no-select" style="width: 50px; height: 50px;">
+        <div class="icon"></div>
+      </div>
+      <div class="site-branding search-form-submit">
+        <i class="iconfont js-toggle-search iconsearch icon-search"></i>
+      </div>
+    </div>
+  </section>
+  <div id="mo-nav" class="">
+  <div class="m-avatar">
+    <img src="https://cdn.jsdelivr.net/gh/mma324/hexobolg/hexobolg/imgkumaio.jpeg">
+  </div>
+  <p style="text-align: center; color: #333; font-weight: 900; font-family: 'Ubuntu', sans-serif; letter-spacing: 1.5px">涼しいニャー叶</p>
+  <p style="text-align: center; word-spacing: 20px;">
+    
+      
+        <a href="http://github.com/mma324" class="fa fa-github" target="_blank" style="color: #333; margin-left:20px"></a>
+      
+        <a href="http://weibo.com/mashozx?s_all=1" class="fa fa-weibo" target="_blank" style="color: #dd4b39; margin-left:20px"></a>
+      
+        <a href="https://wpa.qq.com/msgrd?v=3&uin=951&site=qq&menu=yes" class="fa fa-qq" target="_blank" style="color: #25c6fe; margin-left:20px"></a>
+      
+    
+  </p>
+  <ul id="menu-new-1" class="menu">
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-fort-awesome faa-shake" aria-hidden="true"></i>
+            首页
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/archives">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-archive faa-shake" aria-hidden="true"></i>
+            归档
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/categories/技术/">
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                  技术
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/生活/">
+                  <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                  生活
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/资源/">
+                  <i class="fa fa-cloud-download" aria-hidden="true"></i>
+                  资源
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/随想/">
+                  <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                  随想
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories/转载/">
+                  <i class="fa fa-archive faa-shake" aria-hidden="true"></i>
+                  美化
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/categories/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-bookmark faa-shake" aria-hidden="true"></i>
+            分类
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/tags/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-tag  faa-shake" aria-hidden="true"></i>
+            标签
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="javascript:;">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-list-ul faa-vertical" aria-hidden="true"></i>
+            清单
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/tags/悦读/">
+                  <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
+                  读书
+                </a>
+              </li>
+            
+              <li>
+                <a href="/bangumi/">
+                  <i class="fa fa-film faa-vertical" aria-hidden="true"></i>
+                  番组
+                </a>
+              </li>
+            
+              <li>
+                <a href="/music/">
+                  <i class="fa fa-headphones" aria-hidden="true"></i>
+                  歌单
+                </a>
+              </li>
+            
+              <li>
+                <a href="/tags/图集/">
+                  <i class="fa fa-photo" aria-hidden="true"></i>
+                  图集
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+      <li>
+        <a href="/comment/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
+            留言板
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/links/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-paper-plane faa-float faa-fast" aria-hidden="true"></i>
+            友人帐
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/donate/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
+            赞赏
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
+        <a href="/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
+            关于
+          </span>
+        </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/about/">
+                  <i class="fa fa-meetup" aria-hidden="true"></i>
+                  我？
+                </a>
+              </li>
+            
+              <li>
+                <a href="/theme-sakura/">
+                  <i class="fa iconfont icon-sakura" aria-hidden="true"></i>
+                  主题
+                </a>
+              </li>
+            
+              <li>
+                <a href="/lab/">
+                  <i class="fa fa-cogs" aria-hidden="true"></i>
+                  Lab
+                </a>
+              </li>
+            
+              <li>
+                <a href="/atom.xml">
+                  <i class="fa fa-rss faa-pulse" aria-hidden="true"></i>
+                  RSS
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+    
+  </ul>
+  <p style="text-align: center; font-size: 13px; color: #b9b9b9;">&copy 2019 hexo-sakura</p>
+</div>
+<button onclick="topFunction()" class="mobile-cd-top" id="moblieGoTop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<meting-js
+
+    id="2660651585"
+
+    server="netease"
+
+    type="playlist"
+
+    fixed="true"
+
+    autoplay="false"
+
+    loop="all"
+
+    order="random"
+
+    preload="auto"
+
+    volume="0.7"
+
+    mutex="true"
+
+</meting-js>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script>
+  <!--背景效果-->
+   <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js"></script> 
+   
+   <!--liv2d---->
+   <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+   
+   <!--预加载-->
+   <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+   
+   <!--不蒜子-->
+   <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+   <script src="鼠标点击特效的链接"></script>
+   <!-- 点击出现社会主义彩色文字 --><script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/shehuizhuyi.js"></script>
+   <!-- 点击出现爱心 --><script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/love.js"></script>
+    
+	<!--浏览器搞笑标题-->
+   <script type="text/javascript" src="/js/FunnyTitle.js"></script>
+   <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/hititle.js"></script>
+
+</body>
+</html>
