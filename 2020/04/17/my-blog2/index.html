@@ -575,7 +575,7 @@ hexo v //查看Hexo的版本
   &lt;!-- 添加上面的两句 --&gt;
         &lt;div class=&quot;top-social_v2&quot;&gt;
 </code></pre><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL3dhbmcxMzc1ODMwMjQyL1BpY0dvLy9pbWcvMjAyMDAzMTMxMDM3MDUucG5n?x-oss-process=image/format,png" alt></p>
-<h5 id="2-首页下方通知也没啥用改了"><a href="#2-首页下方通知也没啥用改了" class="headerlink" title="2.首页下方通知也没啥用改了"></a>2.首页下方通知也没啥用改了</h5><p>修改index.ejs，查找<code>&lt;%= theme.notice%&gt;</code>，将其替换为下面的</p>
+<h5 id="2-首页下方通知也没啥用改了"><a href="#2-首页下方通知也没啥用改了" class="headerlink" title="2.首页下方通知也没啥用改了"></a>2.首页下方通知也没啥用改了</h5><p>修改index.ejs，查找&lt;%= theme.notice%&gt;，将其替换为下面的</p>
 <pre><code class="ejs">
 &lt;span id=&quot;hitokoto&quot; style=&quot;margin-left:5px;&quot;&gt; :D 获取中...&lt;/span&gt;
       &lt;p align=&quot;right&quot; id=&quot;afrom&quot;&gt;&lt;/p&gt;
@@ -669,21 +669,10 @@ hexo v //查看Hexo的版本
 <pre><code>  标签: {path: /tags/, fa: fa-tag }
   分类: {path: /categories/, fa: fa-bookmark }
 </code></pre><h6 id="图片转载"><a href="#图片转载" class="headerlink" title="图片转载"></a>图片转载</h6><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL3dhbmcxMzc1ODMwMjQyL1BpY0dvLy9pbWcvMjAyMDAzMTMxMDQ0MDAucG5n?x-oss-process=image/format,png" alt></p>
-<p>首先我们要创建几个文件，文件所在目录如下</p>
-<ul>
-<li><p>layout</p>
-<p>tags.ejs</p>
-</li>
-<li><p>_partial</p>
-</li>
-<li><p>_widget</p>
-<p>tag-cloud.ejs</p>
-<p>tag-wordcloud.ejs</p>
+<p>首先我们要创建几个文件，layout目录创建tags.ejs  layout目录_widget创建tag-cloud.ejs</p>
+<p>   tag-wordcloud.ejs</p>
 <p>1.tags.ejs放在layout根目录下，下面两个文件放在layout子目录_widget下</p>
-<p>tags.ejs</p>
-</li>
-</ul>
-<pre><code class="ejs">&lt;%- partial(&#39;_partial/header&#39;) %&gt;
+<h3 id="tags-ejs"><a href="#tags-ejs" class="headerlink" title="tags.ejs"></a>tags.ejs</h3><pre><code class="ejs">&lt;%- partial(&#39;_partial/header&#39;) %&gt;
 
 &lt;main class=&quot;content&quot;&gt;
 
@@ -693,8 +682,7 @@ hexo v //查看Hexo的版本
 
 &lt;/main&gt;
 </code></pre>
-<p>2._widget/tag-cloud.ejs</p>
-<pre><code class="ejs">&lt;%
+<h3 id="2-widget-tag-cloud-ejs"><a href="#2-widget-tag-cloud-ejs" class="headerlink" title="2._widget/tag-cloud.ejs"></a>2._widget/tag-cloud.ejs</h3><pre><code class="ejs">&lt;%
 var colorArr = [&#39;#F9EBEA&#39;, &#39;#F5EEF8&#39;, &#39;#D5F5E3&#39;, &#39;#E8F8F5&#39;, &#39;#FEF9E7&#39;,
     &#39;#F8F9F9&#39;, &#39;#82E0AA&#39;, &#39;#D7BDE2&#39;, &#39;#A3E4D7&#39;, &#39;#85C1E9&#39;, &#39;#F8C471&#39;, &#39;#F9E79F&#39;, &#39;#FFF&#39;];
 var colorCount = colorArr.length;
@@ -740,8 +728,7 @@ var isTag = is_tag();
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-<p>3._widget/tag-wordcloud.ejs</p>
-<pre><code class="ejs">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/css/jqcloud.css&quot;&gt;
+<h3 id="3-widget-tag-wordcloud-ejs"><a href="#3-widget-tag-wordcloud-ejs" class="headerlink" title="3._widget/tag-wordcloud.ejs"></a>3._widget/tag-wordcloud.ejs</h3><pre><code class="ejs">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/gh/wallleap/cdn/css/jqcloud.css&quot;&gt;
 &lt;style type=&quot;text/css&quot;&gt;
     #tag-wordcloud {
         width: 100%;
@@ -771,11 +758,10 @@ var isTag = is_tag();
     });
 &lt;/script&gt;
 </code></pre>
-<p>4.将这段代码复制到style.css末尾</p>
-<pre><code class="css">.chip-container {    margin-top: 60px;}.chip-container .tag-title {    margin-bottom: 10px;    color: #3C4858;    font-size: 1.75rem;    font-weight: 400;}.chip-container .tag-chips {    margin: 1rem auto 0.5rem;    max-width: 850px;    text-align: center;}.chip-container .tags-posts {    margin-top: 20px;}.chip-container .chip-default {    color: #34495e;}.chip-container .chip-active {    color: #FFF !important;    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%) !important;    box-shadow: 2px 5px 10px #aaa !important;}.chip-container .chip {    margin: 10px 10px;    padding: 19px 14px;    display: inline-flex;    line-height: 0;    font-size: 1rem;    font-weight: 500;    border-radius: 5px;    cursor: pointer;    box-shadow: 0 3px 5px rgba(0, 0, 0, .12);}.chip-container .chip:hover {    color: #fff;    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important;}.chip .tag-length {    margin-left: 5px;    margin-right: -2px;    font-size: 0.5rem;}.chip-default .tag-length {    color: #e91e63;    margin-top: 1px;}.chip-active .tag-length {    color: #fff;}.tag-title.center-align{    margin-top: 100px;    text-align : center;}
+<h3 id="4-将这段代码复制到style-css末尾"><a href="#4-将这段代码复制到style-css末尾" class="headerlink" title="4.将这段代码复制到style.css末尾"></a>4.将这段代码复制到style.css末尾</h3><pre><code class="css">.chip-container {    margin-top: 60px;}.chip-container .tag-title {    margin-bottom: 10px;    color: #3C4858;    font-size: 1.75rem;    font-weight: 400;}.chip-container .tag-chips {    margin: 1rem auto 0.5rem;    max-width: 850px;    text-align: center;}.chip-container .tags-posts {    margin-top: 20px;}.chip-container .chip-default {    color: #34495e;}.chip-container .chip-active {    color: #FFF !important;    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%) !important;    box-shadow: 2px 5px 10px #aaa !important;}.chip-container .chip {    margin: 10px 10px;    padding: 19px 14px;    display: inline-flex;    line-height: 0;    font-size: 1rem;    font-weight: 500;    border-radius: 5px;    cursor: pointer;    box-shadow: 0 3px 5px rgba(0, 0, 0, .12);}.chip-container .chip:hover {    color: #fff;    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important;}.chip .tag-length {    margin-left: 5px;    margin-right: -2px;    font-size: 0.5rem;}.chip-default .tag-length {    color: #e91e63;    margin-top: 1px;}.chip-active .tag-length {    color: #fff;}.tag-title.center-align{    margin-top: 100px;    text-align : center;}
 
 </code></pre>
-<p>使用命令<code>hexo new page &quot;tags&quot;</code>，修改博客根目录下source/tags/index.md</p>
+<p>使用命令hexo new page “tags”，修改博客根目录下source/tags/index.md</p>
 <pre><code>---
 title: tags
 date: 2020-03-09 13:50:05
@@ -783,11 +769,9 @@ layout: tags
 ---
 </code></pre><p>5.在 hexo g hexo s查看页面</p>
 <h3 id="4-3-3优美的分类页"><a href="#4-3-3优美的分类页" class="headerlink" title="4.3.3优美的分类页"></a>4.3.3优美的分类页</h3><p><img src="https://s1.ax1x.com/2020/03/13/8ndoeH.png" alt></p>
-<p>接着创建几个文件，文件所在目录如下layout创建categories.ejs ，layout的_widget创建category-cloud.ejs，</p>
-<p>category-radar.ejs</p>
-<p>categories.ejs放在layout根目录下</p>
-<p>添加代码categories.ejs</p>
-<pre><code>&lt;%- partial(&#39;_partial/header&#39;) %&gt;
+<p>创建几个文件，文件所在目录layout创建categories.ejs ，</p>
+<p>layout的_widget创建category-cloud.ejs，category-radar.ejs</p>
+<h3 id="categories-ejs"><a href="#categories-ejs" class="headerlink" title="categories.ejs"></a>categories.ejs</h3><pre><code>&lt;%- partial(&#39;_partial/header&#39;) %&gt;
 &lt;main class=&quot;content&quot;&gt;
 
     &lt;%- partial(&#39;_widget/category-cloud&#39;) %&gt;
@@ -797,8 +781,7 @@ layout: tags
     &lt;% } %&gt;
 
 &lt;/main&gt;
-</code></pre><p>layout子目录_widget下category-cloud.ejs</p>
-<pre><code>&lt;%
+</code></pre><h3 id="lcategory-cloud-ejs"><a href="#lcategory-cloud-ejs" class="headerlink" title="lcategory-cloud.ejs"></a>lcategory-cloud.ejs</h3><pre><code>&lt;%
 var colorArr = [&#39;#F9EBEA&#39;, &#39;#F5EEF8&#39;, &#39;#D5F5E3&#39;, &#39;#E8F8F5&#39;, &#39;#FEF9E7&#39;,
     &#39;#F8F9F9&#39;, &#39;#82E0AA&#39;, &#39;#D7BDE2&#39;, &#39;#A3E4D7&#39;, &#39;#85C1E9&#39;, &#39;#F8C471&#39;, &#39;#F9E79F&#39;, &#39;#FFF&#39;];
 var colorCount = colorArr.length;
@@ -847,8 +830,7 @@ var isCategory = is_category();
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-</code></pre><p>layout子目录_widget下category-radar.ejs</p>
-<pre><code>&lt;style type=&quot;text/css&quot;&gt;
+</code></pre><h3 id="category-radar-ejs"><a href="#category-radar-ejs" class="headerlink" title="category-radar.ejs"></a>category-radar.ejs</h3><pre><code>&lt;style type=&quot;text/css&quot;&gt;
     #category-radar {
         margin-top: 50px;
         width: 100%;
@@ -923,7 +905,8 @@ var isCategory = is_category();
 
     radarChart.setOption(option);
 &lt;/script&gt;
-</code></pre><p>接着用命令<code>hexo new page &quot;categories&quot;</code>创建分类页修改博客根目录下source/categories/index.md</p>
+</code></pre><p>接着用命令hexo new page “categories”</p>
+<p>创建分类页修改博客根目录下source/categories/index.md</p>
 <pre><code>---
 title: categories
 date: 2020-03-09 13:50:05
@@ -933,7 +916,7 @@ layout: categories
 <h3 id="4-3-4字数统计和阅读时长"><a href="#4-3-4字数统计和阅读时长" class="headerlink" title="4.3.4字数统计和阅读时长"></a>4.3.4字数统计和阅读时长</h3><p>1.先安装相关插件，终端输入以下命令</p>
 <pre><code>npm install hexo-wordcount --save
 </code></pre><ol start="2">
-<li><p>文件配置在<code>theme\sakura\layout\_partial\</code>下创建word.ejs文件</p>
+<li><p>文件配置在theme\sakura\layout_partial\下创建word.ejs文件</p>
 <pre><code>&lt;div style=&quot;margin-top:10px;&quot;&gt;
         &lt;span class=&quot;post-time&quot;&gt;
           &lt;span class=&quot;post-meta-item-icon&quot;&gt;
@@ -953,13 +936,13 @@ layout: categories
           &lt;/span&gt;
         &lt;/span&gt;
     &lt;/div&gt;
-</code></pre><p>3.在\themes\sakura\layout_widget\common-article.ejs文章标题中合适位置添加：（添加在 <code>headr</code> 标签前）</p>
+</code></pre><p>3.在\themes\sakura\layout_widget\common-article.ejs文章标题中合适位置添加：（添加在 headr 标签前）</p>
 <pre><code>&lt;!-- 开始添加字数统计--&gt;
           &lt;% if(theme.word_count &amp;&amp; !post.no_word_count){%&gt;
             &lt;%- partial(&#39;_partial/word&#39;) %&gt;
           &lt;% } %&gt;
           &lt;!-- 添加完成 
-</code></pre><p>4.在<code>MyWeb\themes\sakura\_config.yml</code>配置文末添加</p>
+</code></pre><p>4.在MyWeb\themes\sakura_config.yml配置文末添加</p>
 <pre><code>word_count: true
 </code></pre><p>在_post目录写md文章时，应该加上作者信息：<br>author（名称），authorLink（链接），avatar（头像），authorAbout（简介）</p>
 <p>5.在\themes\sakura\layout_widget\common-article.ejs文章标题中可修改样式：</p>
@@ -972,7 +955,8 @@ layout: categories
 <pre><code>---
 layout: false
 ---
-</code></pre><h3 id="4-3-7博客备份"><a href="#4-3-7博客备份" class="headerlink" title="4.3.7博客备份"></a>4.3.7博客备份</h3><p>hexo-git-backup <a href="https://github.com/coneycode/hexo-git-backup能够传到backup分支也可以把整个博客文件夹上传到GitHub私有仓库" target="_blank" rel="noopener">https://github.com/coneycode/hexo-git-backup能够传到backup分支也可以把整个博客文件夹上传到GitHub私有仓库</a></p>
+</code></pre><h3 id="4-3-7博客备份"><a href="#4-3-7博客备份" class="headerlink" title="4.3.7博客备份"></a>4.3.7博客备份</h3><p>hexo-git-backup <a href="https://github.com/coneycode/hexo-git-backup" target="_blank" rel="noopener">https://github.com/coneycode/hexo-git-backup</a>  </p>
+<p>能够传到backup分支也可以把整个博客文件夹上传到GitHub私有仓库</p>
 <h2 id="5加速与体验优化建议"><a href="#5加速与体验优化建议" class="headerlink" title="5加速与体验优化建议"></a>5加速与体验优化建议</h2><p>托管于GitHub Pages的博客速度总是不尽人意，Sakura主题加载了大量的资源，本身性能并不太好，这里提供一些加速方法，分为托管于GitHub Pages的加速方法和其他加速方法。 这里主要针对未备案域名.毕竟已备案的域名可以用国内的各种服务。</p>
 <h3 id="5-1图片加速"><a href="#5-1图片加速" class="headerlink" title="5.1图片加速"></a>5.1图片加速</h3><p>用github+jsdelivr塔建图床加速图片加载速度jsDelivr 是国外的一家优秀的公共 CDN 服务提供商jsDelivr有一个十分好用的功能——<strong>它可以加速 Github 仓库的文件</strong>。我们可以借此搭建一个免费、全球访问速度超快的图床，使用 PicGo<a href="https://blog.iljw.me/2019/05/jsdelivr-cdn-github.html#fn3" target="_blank" rel="noopener">3</a>将图片上传到指定 Github 仓库位置，再利用 jsDelivr 获得图片加速</p>
 <h3 id="5-2Cloudflare-CDN替换为国内CDN"><a href="#5-2Cloudflare-CDN替换为国内CDN" class="headerlink" title="5.2Cloudflare CDN替换为国内CDN"></a>5.2Cloudflare CDN替换为国内CDN</h3><p>换成国内的BootCDN速度蛮不错在 \themes\Sakura\source\js\ 中找到 sakura-app.js</p>
