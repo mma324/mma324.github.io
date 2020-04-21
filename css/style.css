@@ -1769,7 +1769,7 @@ i.iconfont.hotpost {
     margin:20px 0 20px;
     border-radius:10px;
     background-color:rgba(255,255,255,0);
-    box-shadow:0 1px 20px -6px rgba(0,0,0,.5);
+    box-shadow:0 1px 20px -6px #85CEFB;
     opacity:0;
     transition:box-shadow .3s ease
 }
@@ -7896,7 +7896,7 @@ td.hljs-ln-numbers {
     position: absolute;
     left: 0;
     top: 0;
-    background-color:#0074e0;/*颜色自己换*/
+    background-color:#64b5f6;/*颜色自己换*/
     box-shadow: 0 0 6px #17E1E3;
     border-radius: 10px;
     transition: 1s all;
@@ -7965,3 +7965,13 @@ margin-bottom: 5px;
   background-color: #9f9f9f !important;
 }
 
+ /*主题首页列表视觉优化日期时间美化*/
+.post-date {
+    background-color: #ffb74d !important;
+    padding: 2px 7px;
+    border-radius: 20px;
+    color: #ffffff !important;
+    width: max-content;
+    font-size: 1px !important;
+    margin-top: auto;
+}

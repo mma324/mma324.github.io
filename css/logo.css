@@ -5,7 +5,7 @@
  .logolink .sakuraso {
      background-color: rgba(255, 255, 255, .5);
      border-radius: 5px;
-     color: #464646;
+     color: #464646 ;
      height: auto;
      line-height: 25px;
      margin-right: 0;
@@ -28,20 +28,20 @@
  .logolink.logo a {
      color: #464646;
      float: left;
-     font-size: 25px;
+     font-size: 28px;
      font-weight: 800;
      height: 56px;
-     line-height: 56px;
+     line-height: 52px;
      padding-left: 6px;
      padding-right: 15px;
-     padding-top: 11px;
+     padding-top: 9px;
      text-decoration-line: none;
  }
  .logolink.logo .sakuraso,.logolink.logo .no {
-     font-size: 25px;
-     border-radius: 9px;
-     padding-bottom: 2px;
-     padding-top: 5px;
+     font-size: 27px;
+     border-radius: 7px;
+     padding-bottom: 1px;
+     padding-top: 2px;
  }
  .logolink.logo .no {
      display: inline-block;
