@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2020-04-21T07:18:39.942Z</updated>
+  <updated>2020-04-22T08:48:24.308Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo Sakura主题美化如何给自己网站自定义字体</title>
+    <link href="/2020/04/22/my-blog6/"/>
+    <id>/2020/04/22/my-blog6/</id>
+    <published>2020-04-22T07:40:17.000Z</published>
+    <updated>2020-04-22T08:48:24.308Z</updated>
+    
+    <summary type="html">
+    
+      Sakura主题美化如何给网站自定义字体记录一下
+    
+    </summary>
+    
+      <category term="美化" scheme="/categories/%E7%BE%8E%E5%8C%96/"/>
+    
+    
+      <category term="随笔" scheme="/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo sakura 主题美化如何给你的网站文章添加字数统计和阅读时长功能网站</title>
@@ -77,7 +97,7 @@
     <link href="/2020/04/17/my-blog3/"/>
     <id>/2020/04/17/my-blog3/</id>
     <published>2020-04-17T11:00:04.000Z</published>
-    <updated>2020-04-17T13:50:37.254Z</updated>
+    <updated>2020-04-22T07:39:50.058Z</updated>
     
     <summary type="html">
     
