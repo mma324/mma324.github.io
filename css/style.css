@@ -7886,27 +7886,6 @@ td.hljs-ln-numbers {
   cursor: pointer;
 }
 
- /*侧边条*/
-.post-list-thumb:hover:after {
-    height: 100%;
-}
-.post-list-thumb:after {
-    content: '　';
-    width: 4px;
-    height: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color:#64b5f6;/*颜色自己换*/
-    box-shadow: 0 0 6px #17E1E3;
-    border-radius: 10px;
-    transition: 1s all;
-}
-.post-list-thumb-left:after{
-  right: 0;
- left: auto;
-}
- 
  /*foot底部 github图标代码*/
 .github-badge {
 display: inline-block;
@@ -7966,16 +7945,6 @@ margin-bottom: 5px;
   background-color: #9f9f9f !important;
 }
 
- /*主题首页列表视觉优化日期时间美化*/
-.post-date {
-    background-color: #ffb74d !important;
-    padding: 2px 7px;
-    border-radius: 20px;
-    color: #ffffff !important;
-    width: max-content;
-    font-size: 1px !important;
-    margin-top: auto;
-}
 
 /* 全站字体样式 8262、8285、8290行+'zhanku', | 7881行+font-family: Noto Serif SC;*/
 @font-face {
@@ -7989,3 +7958,35 @@ margin-bottom: 5px;
     font-weight: normal;
 }
 
+@media (min-width: 1024px){
+  /*主题首页列表视觉优化日期时间美化*/
+.post-date {
+    background-color: #ffb74d !important;
+    padding: 2px 7px;
+    border-radius: 20px;
+    color: #ffffff !important;
+    width: max-content;
+    font-size: 1px !important;
+    margin-top: auto;
+}
+
+ /*侧边条*/
+.post-list-thumb:hover:after {
+    height: 100%;
+}
+.post-list-thumb:after {
+    content: '　';
+    width: 4px;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color:#64b5f6;/*颜色自己换*/
+    box-shadow: 0 0 6px #17E1E3;
+    border-radius: 10px;
+    transition: 1s all;
+}
+.post-list-thumb-left:after{
+  right: 0;
+ left: auto;
+}
