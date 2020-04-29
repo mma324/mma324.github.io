@@ -63,6 +63,9 @@
    <link rel="stylesheet" type="text/css" href="/css/logo.css">
    <link rel="stylesheet" type="text/css" href="/fonts/LOGO/logo.css">
    
+   <!-- 文章日历 -->
+   <link rel="stylesheet" type="text/css" href="/css/matery.css">
+ 
 </head>
 </html>
 <body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
@@ -70,7 +73,7 @@
   </div>
   <a href="#" class="cd-top faa-float animated"></a>
   <section id="main-container">
-    <div class="headertop ">
+     <div class="headertop ">
   <div id="banner_wave_1"></div>
   <div id="banner_wave_2"></div>
   <figure id="centerbg" class="centerbg">
@@ -230,13 +233,6 @@
                       </li>
                     
                       <li>
-                        <a href="/tags/">
-                          <i class="fa fa-tag  faa-shake" aria-hidden="true"></i>
-                          标签
-                        </a>
-                      </li>
-                    
-                      <li>
                         <a href="/categories/美化/">
                           <i class="fa fa-archive faa-shake" aria-hidden="true"></i>
                           美化
@@ -248,12 +244,44 @@
               </li>
             
               <li>
-                <a href="/categories/">
+                <a href="javascript:;">
                   <span class="faa-parent animated-hover">
-                    <i class="fa  fa-bookmark faa-shake" aria-hidden="true"></i>
-                    分类
+                    <i class="fa  fa-graduation-cap faa-vertical" aria-hidden="true"></i>
+                    博客
                   </span>
                 </a>
+                
+                  <ul class="sub-menu">
+                    
+                      <li>
+                        <a href="/analytics/">
+                          <i class="fa fa-line-chart" aria-hidden="true"></i>
+                          统计
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/categories">
+                          <i class="fa fa-bookmark" aria-hidden="true"></i>
+                          分类
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/random/">
+                          <i class="fa fa-random" aria-hidden="true"></i>
+                          随机
+                        </a>
+                      </li>
+                    
+                      <li>
+                        <a href="/tags/">
+                          <i class="fa fa-tag  faa-shake" aria-hidden="true"></i>
+                          标签
+                        </a>
+                      </li>
+                    
+                  </ul>
                 
               </li>
             
@@ -268,16 +296,9 @@
                   <ul class="sub-menu">
                     
                       <li>
-                        <a href="/shuoshuo/">
-                          <i class="fa fa-commenting-o fa-commenting" aria-hidden="true"></i>
-                          说说
-                        </a>
-                      </li>
-                    
-                      <li>
                         <a href="/tags/悦读/">
                           <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
-                          读书
+                          书单
                         </a>
                       </li>
                     
@@ -307,6 +328,16 @@
               </li>
             
               <li>
+                <a href="/shuoshuo/">
+                  <span class="faa-parent animated-hover">
+                    <i class="fa  fa-commenting-o fa-commenting" aria-hidden="true"></i>
+                    微说
+                  </span>
+                </a>
+                
+              </li>
+            
+              <li>
                 <a href="/comment/">
                   <span class="faa-parent animated-hover">
                     <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
@@ -327,16 +358,6 @@
               </li>
             
               <li>
-                <a href="/donate/">
-                  <span class="faa-parent animated-hover">
-                    <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
-                    赞赏
-                  </span>
-                </a>
-                
-              </li>
-            
-              <li>
                 <a href="/">
                   <span class="faa-parent animated-hover">
                     <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
@@ -347,16 +368,16 @@
                   <ul class="sub-menu">
                     
                       <li>
-                        <a href="/about/">
-                          <i class="fa fa-meetup" aria-hidden="true"></i>
-                          我？
+                        <a href="/donate/">
+                          <i class="fa fa-heart faa-pulse" aria-hidden="true"></i>
+                          赞赏
                         </a>
                       </li>
                     
                       <li>
-                        <a href="/lab/">
-                          <i class="fa fa-cogs" aria-hidden="true"></i>
-                          Lab
+                        <a href="/about/">
+                          <i class="fa fa-meetup" aria-hidden="true"></i>
+                          我？
                         </a>
                       </li>
                     
@@ -606,6 +627,7 @@ $(document).ready(function() {
 });
 </script>
 
+
     <div class="openNav no-select" style="height: 50px;">
       <div class="iconflat no-select" style="width: 50px; height: 50px;">
         <div class="icon"></div>
@@ -673,13 +695,6 @@ $(document).ready(function() {
               </li>
             
               <li>
-                <a href="/tags/">
-                  <i class="fa fa-tag  faa-shake" aria-hidden="true"></i>
-                  标签
-                </a>
-              </li>
-            
-              <li>
                 <a href="/categories/美化/">
                   <i class="fa fa-archive faa-shake" aria-hidden="true"></i>
                   美化
@@ -691,12 +706,44 @@ $(document).ready(function() {
       </li>
     
       <li>
-        <a href="/categories/">
+        <a href="javascript:;">
           <span class="faa-parent animated-hover">
-            <i class="fa  fa-bookmark faa-shake" aria-hidden="true"></i>
-            分类
+            <i class="fa  fa-graduation-cap faa-vertical" aria-hidden="true"></i>
+            博客
           </span>
         </a>
+        
+          <ul class="sub-menu">
+            
+              <li>
+                <a href="/analytics/">
+                  <i class="fa fa-line-chart" aria-hidden="true"></i>
+                  统计
+                </a>
+              </li>
+            
+              <li>
+                <a href="/categories">
+                  <i class="fa fa-bookmark" aria-hidden="true"></i>
+                  分类
+                </a>
+              </li>
+            
+              <li>
+                <a href="/random/">
+                  <i class="fa fa-random" aria-hidden="true"></i>
+                  随机
+                </a>
+              </li>
+            
+              <li>
+                <a href="/tags/">
+                  <i class="fa fa-tag  faa-shake" aria-hidden="true"></i>
+                  标签
+                </a>
+              </li>
+            
+          </ul>
         
       </li>
     
@@ -711,16 +758,9 @@ $(document).ready(function() {
           <ul class="sub-menu">
             
               <li>
-                <a href="/shuoshuo/">
-                  <i class="fa fa-commenting-o fa-commenting" aria-hidden="true"></i>
-                  说说
-                </a>
-              </li>
-            
-              <li>
                 <a href="/tags/悦读/">
                   <i class="fa fa-th-list faa-bounce" aria-hidden="true"></i>
-                  读书
+                  书单
                 </a>
               </li>
             
@@ -750,6 +790,16 @@ $(document).ready(function() {
       </li>
     
       <li>
+        <a href="/shuoshuo/">
+          <span class="faa-parent animated-hover">
+            <i class="fa  fa-commenting-o fa-commenting" aria-hidden="true"></i>
+            微说
+          </span>
+        </a>
+        
+      </li>
+    
+      <li>
         <a href="/comment/">
           <span class="faa-parent animated-hover">
             <i class="fa  fa-pencil-square-o faa-tada" aria-hidden="true"></i>
@@ -770,16 +820,6 @@ $(document).ready(function() {
       </li>
     
       <li>
-        <a href="/donate/">
-          <span class="faa-parent animated-hover">
-            <i class="fa  fa-heart faa-pulse" aria-hidden="true"></i>
-            赞赏
-          </span>
-        </a>
-        
-      </li>
-    
-      <li>
         <a href="/">
           <span class="faa-parent animated-hover">
             <i class="fa  fa-leaf faa-wrench" aria-hidden="true"></i>
@@ -790,16 +830,16 @@ $(document).ready(function() {
           <ul class="sub-menu">
             
               <li>
-                <a href="/about/">
-                  <i class="fa fa-meetup" aria-hidden="true"></i>
-                  我？
+                <a href="/donate/">
+                  <i class="fa fa-heart faa-pulse" aria-hidden="true"></i>
+                  赞赏
                 </a>
               </li>
             
               <li>
-                <a href="/lab/">
-                  <i class="fa fa-cogs" aria-hidden="true"></i>
-                  Lab
+                <a href="/about/">
+                  <i class="fa fa-meetup" aria-hidden="true"></i>
+                  我？
                 </a>
               </li>
             
@@ -883,8 +923,8 @@ $(document).ready(function() {
   });
 </script>
   <!--背景效果-->
-   <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js"></script> 
-   
+   <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/canvas-nest.min.js"></script>
+
    <!--liv2d---->
    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
    
@@ -899,11 +939,13 @@ $(document).ready(function() {
    <!-- 点击出现爱心 --><script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/love.js"></script>
     
 	<!--浏览器搞笑标题-->
-   <script type="text/javascript" src="/js/FunnyTitle.js"></script>
+   <script src="/js/FunnyTitle.js"></script>
  
     
 	<!--footer底部心形图标-->
    <link rel="stylesheet" type="text/css" href="/css/heartbeat.min.css ">
+   
+   <script src="/js/loading-pages"></script>
 
 </body>
 </html>
